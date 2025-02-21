@@ -1,5 +1,9 @@
 # Reactjs-tic-tac-toe
 
+![Design preview for the Reactjs-tic-tac-toe app](./public/preview.JPG)
+
+live demo: https://techguy08.github.io/reactjs-tic-tac-toe/
+
 ## Available Scripts
 
 In the project directory, you can run:
