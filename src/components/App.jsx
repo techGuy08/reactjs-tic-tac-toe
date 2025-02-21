@@ -1,5 +1,6 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import Game from "./Game";
+import VantaAnimation from "./VantaAnimation";
 
 const App = () => {
   const [history, setHistory] = useState([Array(9).fill(null)]);
@@ -47,7 +48,8 @@ const App = () => {
     setIsSortAsc(!isSortAsc);
   };
   return (
-    <div>
+    <React.Fragment>
+      <VantaAnimation></VantaAnimation>
       <h1>React.js Tic Tac Toe</h1>
       <Game
         gameGrid={currentSquares}
@@ -62,7 +64,15 @@ const App = () => {
         onSortClick={handleSortClick}
         movePostionsArr={movePostionsArr}
       />
-    </div>
+      <footer>
+        <div className="container">
+          <p>Designed and Coded by</p>
+          <p>
+            <a href="https://github.com/techGuy08">techGuy08</a>
+          </p>
+        </div>
+      </footer>
+    </React.Fragment>
   );
 };
 
