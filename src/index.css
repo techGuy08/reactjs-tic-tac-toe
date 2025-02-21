@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.boardGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 160px);
+  max-width: 60%;
+  grid-auto-rows: 120px;
+}
+
+button.square {
+  font-size: 80px;
+  cursor: pointer;
+}
+button.square.win {
+  color: white;
+  background: #444;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.col-left {
+  margin-right: 36px;
+}
+
+.game-info ol {
+  list-style: none;
+  margin-top: 30px;
+}
+
+.game-info button {
+  display: inline-block;
+  margin-bottom: 8px;
+  font-size: 15px;
+  padding: 8px 29px;
+  cursor: pointer;
+}
+
+.boardGrid {
+  margin-top: 10px;
+}
+
+.game-main {
+  font-size: 26px;
+}
